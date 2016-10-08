@@ -77,15 +77,15 @@ a {
 
 @media screen and (min-width: 64em) {
   .project-name {
-    font-size: 3.25rem; } }
+    font-size: 2.20rem; } }
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
   .project-name {
-    font-size: 2.25rem; } }
+    font-size: 1.70rem; } }
 
 @media screen and (max-width: 42em) {
   .project-name {
-    font-size: 1.75rem; } }
+    font-size: 1.20rem; } }
 
 .project-tagline {
   margin-bottom: 2rem;
@@ -234,7 +234,7 @@ a {
 
 @media screen and (min-width: 64em) {
   .site-footer {
-    font-size: 1rem; } }
+    font-size: 0.6rem; } }
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
   .site-footer {
@@ -242,4 +242,4 @@ a {
 
 @media screen and (max-width: 42em) {
   .site-footer {
-    font-size: 0.9rem; } }
+    font-size: 0.6rem; } }
