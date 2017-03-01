@@ -77,8 +77,11 @@ a {
   margin-bottom: 50px; }
 
 .project-menu {
-  padding-right:0.15rem;
+  margin-top:-25px;
+  width:120px;
+  text-align:center;
   float:left;
+  list-style:None;
 }
 
 @media screen and (min-width: 64em) {
