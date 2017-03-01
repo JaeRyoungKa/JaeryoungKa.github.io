@@ -77,11 +77,12 @@ a {
   margin-bottom: 50px; }
 
 .page-header ul {    
+  display: table;
+  margin-left: auto;
   margin-right: auto;
 }
 .page-header li {
   text-align:center;
-  margin-right:124px;
   width:124px;
 }
 .project-menu {
