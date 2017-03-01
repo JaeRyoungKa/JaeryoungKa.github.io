@@ -76,7 +76,7 @@ a {
 
 .project-name {
   margin-top: 0.5rem;
-  margin-bottom: 0.5rem; }
+  margin-bottom: 2.0rem; }
 
 @media screen and (min-width: 64em) {
   .project-name {
