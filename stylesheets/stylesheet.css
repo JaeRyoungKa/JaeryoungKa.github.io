@@ -127,30 +127,29 @@ padding-top:10px;
   font-weight: normal;
   opacity: 0.7; }
 
-@media screen and (min-width: 64em) {
-  .project-tagline {
-    font-size: 1.25rem; }
 #creampuffcookie  {
    position:absolute;
  top:5px;
  padding-left:50px;
   }
+
+@media screen and (min-width: 64em) {
+  .project-tagline {
+    font-size: 1.25rem; }
 }
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
   .project-tagline {
     font-size: 1.15rem; }
-  #creampuffcookie  {
-   position:absolute;
- top:5px;
- padding-left:50px;
-  }
-  
 }
 
 @media screen and (max-width: 42em) {
   .project-tagline {
-    font-size: 1rem; } }
+    font-size: 1rem; } 
+  #creampuffcookie {
+    display:None;
+  }
+}
 
 
 .main-content :first-child {
