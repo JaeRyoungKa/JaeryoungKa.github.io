@@ -76,10 +76,13 @@ a {
   margin-top: 0.5rem;
   margin-bottom: 50px; }
 
-.page-header ul li {
+.page-header li {
   display:inline;
-  border-left:1px solid #999;
-  padding:0 10px;
+  border-left:2px solid #999;
+  padding:4px 30px;
+}
+.page-header ul {
+ padding-left:0px; 
 }
 .page-header ul li:first-child{border-left:none;} 
 
