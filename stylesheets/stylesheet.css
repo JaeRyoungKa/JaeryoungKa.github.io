@@ -7,7 +7,7 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: "Nanum Gothic", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "나눔고딕", "Nanum Gothic", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
   color: #606c71; }
@@ -120,7 +120,7 @@ a {
   margin-bottom: 1em; }
 .main-content code {
   padding: 2px 4px;
-  font-family: "Nanum Gothic", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-family: "나눔고딕", "Nanum Gothic", Consolas, "Liberation Mono", Menlo, Courier, monospace;
   font-size: 0.9rem;
   color: #383e41;
   background-color: #f3f6fa;
@@ -129,7 +129,7 @@ a {
   padding: 0.8rem;
   margin-top: 0;
   margin-bottom: 1rem;
-  font: 1rem "Nanum Gothic", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font: 1rem "나눔고딕", "Nanum Gothic", Consolas, "Liberation Mono", Menlo, Courier, monospace;
   color: #567482;
   word-wrap: normal;
   background-color: #f3f6fa;
