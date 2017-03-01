@@ -132,8 +132,8 @@ padding-top:10px;
     font-size: 1.25rem; }
 #creampuffcookie  {
    position:absolute;
- top:20px;
- right:50px;
+ top:5px;
+ padding-left:50px;
   }
 }
 
@@ -142,8 +142,8 @@ padding-top:10px;
     font-size: 1.15rem; }
   #creampuffcookie  {
    position:absolute;
- top:50px;
- padding-left:20px;
+ top:5px;
+ padding-left:50px;
   }
   
 }
