@@ -90,6 +90,12 @@ a {
   font-weight:bold;
 }
 
+#page-title {
+ height:45px;
+  background:#f2fdff;
+  border:1px solid #aaa;
+}
+
 @media screen and (min-width: 64em) {
   .project-name {
     font-size: 1.96rem; }
