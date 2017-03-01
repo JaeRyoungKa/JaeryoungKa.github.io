@@ -103,23 +103,23 @@ padding-top:10px;
 
 @media screen and (min-width: 64em) {
   .project-name {
-    font-size: 1.96rem; }
+    font-size: 1.90rem; }
   .project-menu {
     font-size: 1.10rem; }
 }
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
   .project-name {
-    font-size: 1.56rem; } 
+    font-size: 1.70rem; } 
   .project-menu {
-    font-size: 0.85rem; }
+    font-size: 0.93rem; }
 }
 
 @media screen and (max-width: 42em) {
   .project-name {
-    font-size: 1.20rem; } 
+    font-size: 1.50rem; } 
   .project-menu {
-    font-size: 0.60rem; }
+    font-size: 0.75rem; }
 }
 
 .project-tagline {
