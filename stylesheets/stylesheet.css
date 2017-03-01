@@ -76,22 +76,13 @@ a {
   margin-top: 0.5rem;
   margin-bottom: 50px; }
 
-.page-header ul {    
-  display: table;
-  margin-left: auto;
-  margin-right: auto;
+.page-header ul li {
+  display:inline;
+  border-left:1px solid #999;
+  padding:0 10px;
 }
-.page-header li {
-  text-align:center;
-  width:124px;
-  margin-right:124px;
-}
-.project-menu {
-  margin-top:-40px;
-  float:left;
-  list-style:None;
+.page-header ul li:first-child{border-left:none;} 
 
-}
 
 @media screen and (min-width: 64em) {
   .project-name {
