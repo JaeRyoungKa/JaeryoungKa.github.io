@@ -86,6 +86,9 @@ a {
 }
 .page-header ul li:first-child{border-left:none;} 
 
+.project-menu {
+  font-weight:bold;
+}
 
 @media screen and (min-width: 64em) {
   .project-name {
