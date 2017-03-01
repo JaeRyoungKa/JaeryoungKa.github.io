@@ -84,6 +84,7 @@ a {
 .page-header li {
   text-align:center;
   width:124px;
+  margin-right:124px;
 }
 .project-menu {
   margin-top:-40px;
