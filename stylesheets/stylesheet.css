@@ -97,7 +97,8 @@ a {
 }
 
 #page-title h4 {
-padding-top:22px;
+  padding-left:15px;
+padding-top:10px;
 }
 
 @media screen and (min-width: 64em) {
