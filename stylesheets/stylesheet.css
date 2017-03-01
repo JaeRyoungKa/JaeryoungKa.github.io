@@ -77,7 +77,7 @@ a {
   margin-bottom: 50px; }
 
 #profile {
-  padding-right:15px;
+  padding-right:0.15rem;
 }
 
 @media screen and (min-width: 64em) {
