@@ -91,9 +91,13 @@ a {
 }
 
 #page-title {
- height:45px;
+ height:44px;
   background:#f2fdff;
   border:1px solid #aaa;
+}
+
+#page-title h4 {
+padding-top:22px;
 }
 
 @media screen and (min-width: 64em) {
