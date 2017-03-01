@@ -129,21 +129,29 @@ padding-top:10px;
 
 @media screen and (min-width: 64em) {
   .project-tagline {
-    font-size: 1.25rem; } }
+    font-size: 1.25rem; }
+#creampuffcookie  {
+   position:absolute;
+ top:20px;
+ right:50px;
+  }
+}
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
   .project-tagline {
-    font-size: 1.15rem; } }
+    font-size: 1.15rem; }
+  #creampuffcookie  {
+   position:absolute;
+ top:50px;
+ padding-left:20px;
+  }
+  
+}
 
 @media screen and (max-width: 42em) {
   .project-tagline {
     font-size: 1rem; } }
 
-#creampuffcookie {
- position:absolute;
- top:20px;
- right:50px;
-}
 
 .main-content :first-child {
   margin-top: 0; }
