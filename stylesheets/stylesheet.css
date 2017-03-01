@@ -76,8 +76,9 @@ a {
   margin-top: 0.5rem;
   margin-bottom: 50px; }
 
-.page-header ul {
- text-align:center;
+.page-header ul {    
+  max-width: 660px;
+  margin-right: auto;
 }
 .page-header li {
   text-align:center;
@@ -87,7 +88,7 @@ a {
   margin-top:-40px;
   float:left;
   list-style:None;
-  position:relative;
+
 }
 
 @media screen and (min-width: 64em) {
