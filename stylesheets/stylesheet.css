@@ -1,6 +1,4 @@
 
-@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
-
 * {
   box-sizing: border-box; }
 
@@ -79,20 +77,29 @@ a {
   margin-bottom: 50px; }
 
 #profile {
-  color:red;
+  color:#a8a8a8;
 }
 
 @media screen and (min-width: 64em) {
   .project-name {
-    font-size: 2.20rem; } }
+    font-size: 2.20rem; }
+  .project-menu {
+    font-size: 1.10rem; }
+}
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
   .project-name {
-    font-size: 1.70rem; } }
+    font-size: 1.70rem; } 
+  .project-menu {
+    font-size: 0.85rem; }
+}
 
 @media screen and (max-width: 42em) {
   .project-name {
-    font-size: 1.20rem; } }
+    font-size: 1.20rem; } 
+  .project-menu {
+    font-size: 0.60rem; }
+}
 
 .project-tagline {
   margin-bottom: 2rem;
