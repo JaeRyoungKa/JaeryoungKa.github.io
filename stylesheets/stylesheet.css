@@ -139,6 +139,11 @@ padding-top:10px;
   .project-tagline {
     font-size: 1rem; } }
 
+#creampuffcookie {
+ top:50px;
+  left:50px;
+}
+
 .main-content :first-child {
   margin-top: 0; }
 .main-content img {
