@@ -107,13 +107,17 @@ padding-top:10px;
 .panel {
  border-radius:2px;
  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.12), 0 1px 6px 0 rgba(0, 0, 0, 0.12);
+ margin-bottom:20px;
 }
 
 .panel .header {
  background-color: #ff5722; 
- padding: 10px 15px;
+ padding: 10px 15px; 
 }
 
+.panel #grayblue {
+  background-color:#009688;
+}
 .panel .header h4 {
  color:#FFFFFF; 
  margin-bottom:0px;
@@ -123,9 +127,6 @@ padding-top:10px;
  padding:15px;
 }
 
-.panel .header #009688 {
-  background-color:#009688;
-}
 
 
 @media screen and (min-width: 64em) {
