@@ -112,7 +112,7 @@ padding-top:10px;
 .panel .header {
  background-color: #ff5722; 
  padding: 10px 15px;
-  margin:0 0 0 0;
+  margin-bottom:0px;
 }
 
 .panel .header .h4 {
