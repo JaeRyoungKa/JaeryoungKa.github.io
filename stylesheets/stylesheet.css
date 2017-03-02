@@ -121,7 +121,10 @@ padding-top:10px;
 
 .panel .contents {
  padding:15px;
-  
+}
+
+.panel .header #009688 {
+  background-color:#009688;
 }
 
 
