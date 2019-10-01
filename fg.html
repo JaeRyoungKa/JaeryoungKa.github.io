@@ -27,6 +27,10 @@
             text-align: center;
             font-size: 4rem;
         }
+        
+        .row {
+            margin-top: 30px;
+        }
     </style>
 
 </head>
@@ -40,7 +44,7 @@
 
         <div class="row score">
             <div class="col-sm-5">
-                <div class="card bg-light">
+                <div class="card bg-info text-white">
                     <div class="card-body">
                         {{ score1Display }}
                     </div>
@@ -50,7 +54,7 @@
 
             </div>
             <div class="col-sm-5">
-                <div class="card bg-light">
+                <div class="card bg-info text-white">
                     <div class="card-body">
                         {{ score2Display }}
                     </div>
@@ -61,7 +65,7 @@
         <div class="row">
             <div class="col-sm-5">
                 <div class="card ">
-                    <div class="card-body">
+                    <div class="card-body bg-light">
                         <a href="#" v-on:click="score1 += 10; score1Display += 10;" class="btn btn-primary">+10</a>
                         <a href="#" v-on:click="score1Hidden += Math.round(Math.random() * 8 + 16.00, 0)" class="btn btn-light">+20</a>
                     </div>
@@ -72,7 +76,7 @@
             </div>
             <div class="col-sm-5">
                 <div class="card ">
-                    <div class="card-body">
+                    <div class="card-body bg-light">
                         <a href="#" v-on:click="score2 += 10; score2Display += 10;" class="btn btn-primary">+10</a>
                         <a href="#" v-on:click="score2Hidden += Math.round(Math.random() * 8 + 16.00, 0)" class="btn btn-light">+20</a>
                     </div>
@@ -82,9 +86,9 @@
 
         <div class="row">
             <div class="col-sm-12">
-                <div class="card bg-warning">
+                <div class="card bg-light">
                     <div class="card-body">
-                        <a href="#" v-on:click="finalize()" class="btn btn-light">Go somewhere</a>
+                        <a href="#" v-on:click="finalize()" class="btn btn-light">Final Pts</a>
                     </div>
                 </div>
             </div>
