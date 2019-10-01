@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>?!</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#413b98">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap&subset=korean" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>
+
+
+    <style>
+        .card h4,
+        li,
+        mark,
+        p {
+            font-size: 0.9rem;
+        }
+        
+        div {
+            text-align: center;
+            font-size: 4rem;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="header"></div>
+    <div class="container fg-container">
+        <h4 style="margin-top: 20px; margin-bottom:15px;">
+
+        </h4>
+
+        <div class="row score">
+            <div class="col-sm-5">
+                <div class="card bg-light">
+                    <div class="card-body">
+                        {{ score1Display }}
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2">
+
+            </div>
+            <div class="col-sm-5">
+                <div class="card bg-light">
+                    <div class="card-body">
+                        {{ score2Display }}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-5">
+                <div class="card ">
+                    <div class="card-body">
+                        <a href="#" v-on:click="score1 += 10; score1Display += 10;" class="btn btn-primary">+10</a>
+                        <a href="#" v-on:click="score1Hidden += Math.round(Math.random() * 8 + 16.00, 0)" class="btn btn-light">+20</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2">
+
+            </div>
+            <div class="col-sm-5">
+                <div class="card ">
+                    <div class="card-body">
+                        <a href="#" v-on:click="score2 += 10; score2Display += 10;" class="btn btn-primary">+10</a>
+                        <a href="#" v-on:click="score2Hidden += Math.round(Math.random() * 8 + 16.00, 0)" class="btn btn-light">+20</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card bg-warning">
+                    <div class="card-body">
+                        <a href="#" v-on:click="finalize()" class="btn btn-light">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+    <script type="text/javascript">
+        var vue_det = new Vue({
+            el: '.fg-container',
+            data: {
+                score1Display: 0,
+                score2Display: 0,
+                score1: 0,
+                score2: 0,
+                score1Hidden: 0,
+                score2Hidden: 0,
+                estimatedTime: 1,
+            },
+            methods: {
+                async finalize() {
+                    this.estimatedTime = (this.score1Hidden > this.score2Hidden) ? (4500 / this.score1Hidden) : (4500 / this.score2Hidden)
+                    while (this.score1Hidden > 0 || this.score2Hidden > 0) {
+                        if (this.score1Hidden > 0) {
+                            if (this.score1Hidden > 10) {
+                                this.score1 += 10
+                                this.score1Display = (Math.abs(this.score1 - this.score2) > 10) ? Math.round(this.score1 / 10) * 10 : this.score1
+                                this.score1Hidden -= 10
+                            } else {
+                                this.score1 += 1
+                                this.score1Display = (Math.abs(this.score1 - this.score2) > 10) ? Math.round(this.score1 / 10) * 10 : this.score1
+                                this.score1Hidden -= 1
+                            }
+                        }
+                        if (this.score2Hidden > 0) {
+                            if (this.score2Hidden > 10) {
+                                this.score2 += 10
+                                this.score2Display = (Math.abs(this.score1 - this.score2) > 10) ? Math.round(this.score2 / 10) * 10 : this.score2
+                                this.score2Hidden -= 10
+                            } else {
+                                this.score2 += 1
+                                this.score2Display = (Math.abs(this.score1 - this.score2) > 10) ? Math.round(this.score2 / 10) * 10 : this.score2
+                                this.score2Hidden -= 1
+                            }
+                        }
+
+                        function sleep(ms) {
+                            return new Promise(resolve => setTimeout(resolve, ms));
+                        }
+                        await sleep(this.estimatedTime);
+                    }
+                }
+            }
+        });
+    </script>
+
+</body>
+
+</html>
